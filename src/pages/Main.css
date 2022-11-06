@@ -1,0 +1,77 @@
+.movieTrack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    background-color: #f8f9fa ;
+    margin: 0%;
+    
+}
+.movieTrack form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   background-color: #CCCCCC;  
+    padding: 1%;   
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.onecard{
+    margin: 1%;
+    border-width: 0.2rem;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+}
+.onecard img{
+    height: 100%;
+    width: 100%;
+}
+.card:hover{
+    transform: scale(110%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cardBody{
+    position: absolute;
+   padding: 0%;
+    width: 100%;
+}
+.cardDesc{
+    position: relative;
+    width: 100%;
+    left:-60vh;
+    transition: all 1.3s;
+}
+
+.onecard:hover .cardDesc{
+    visibility: visible;
+    color: white;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); 
+}
+.onecard:hover img{
+    filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 750px) {
+    .comboForm{
+        flex-direction: column !important;
+    }
+    .card:hover{
+        transform: scale(90%);
+       
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .comboForm{
+        margin: 2% 0;
+    }
+}

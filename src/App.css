@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("./images/background-6650672_1920.jpg");
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}

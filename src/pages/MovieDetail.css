@@ -1,0 +1,28 @@
+.movieCombo {
+    display: flex;
+    justify-content: center;
+    /* background-image: url("../images/background-6650672_1920.jpg"); */
+ align-items: center;
+ font-weight: 700;
+}
+.movieDetail{
+    width: 30%;
+   margin-right: 2%;
+}
+.poster{
+    width: 30%;
+}
+@media only screen and (max-width: 1000px) {
+    .movieCombo{
+        /* background-image: none !important;
+        background-color:#cca943; */
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .poster{
+        width: 50%;
+    }
+    .movieDetail{
+        width: 80%;
+    }
+}
