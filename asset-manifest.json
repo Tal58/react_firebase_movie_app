@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react_firebase_movie_app/static/css/main.60a39e28.css",
+    "main.js": "/react_firebase_movie_app/static/js/main.67ad3f74.js",
+    "static/js/787.bcd54a83.chunk.js": "/react_firebase_movie_app/static/js/787.bcd54a83.chunk.js",
+    "static/media/background-6650672_1920.jpg": "/react_firebase_movie_app/static/media/background-6650672_1920.2487306e74b24a8a128f.jpg",
+    "index.html": "/react_firebase_movie_app/index.html",
+    "main.60a39e28.css.map": "/react_firebase_movie_app/static/css/main.60a39e28.css.map",
+    "main.67ad3f74.js.map": "/react_firebase_movie_app/static/js/main.67ad3f74.js.map",
+    "787.bcd54a83.chunk.js.map": "/react_firebase_movie_app/static/js/787.bcd54a83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60a39e28.css",
+    "static/js/main.67ad3f74.js"
+  ]
+}
