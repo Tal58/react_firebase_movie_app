@@ -5,7 +5,7 @@ import "./Home.css"
 
 function Home() {
   localStorage.clear();
-  
+  //toastify integrated to the home page in order to display welcome message 
   const notify = () => toast(' ♘ Welcome to Movie App!!!', {
     position: "top-right",
     autoClose: 5000,

@@ -5,19 +5,20 @@ import { FcGoogle} from "react-icons/fc"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { auth, SignInWithGoogle } from '../auth/firebase';
-import { CheckLogin,CheckError} from '../components/context/LoginContext';
+import { CheckLogin} from '../components/context/LoginContext';
 import {ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./LoginRegisterStyle.css"
 
 
 function Login() {
-
+//keep user info
     const [LoginEmail, setLoginEmail] = useState("")
     const [LoginPassword, setLoginPassword] = useState("")
     const [user,setUser] = useState({})
+    //useContext used to check whether successfully login or not
     const {check, setCheck} = useContext(CheckLogin)
-    const {checkError, setCheckError} = useContext(CheckError)
+    //to navigate other pages
     const navigate = useNavigate()
     const notify = () => toast(`♟️ Welcome to application login page!`, {
       position: "top-right",
@@ -37,54 +38,54 @@ function Login() {
     notify() 
     },[]);
     
-    
+    //check login infos from firebase
     const login = async (e) => {
       e.preventDefault();
+      // setCheckError(false);
       try {
         const user = await signInWithEmailAndPassword(
           auth,
           LoginEmail,
           LoginPassword
         );
+        //keep the values in the local storage if user can login
         localStorage.setItem("email", LoginEmail)
         console.log(user);
         console.log(check);
-        if (!checkError){
-              console.log(checkError)
+        if (!check){
+              //to open all closed pages
                 setCheck(true)
                 navigate("/main")
             }
 
       } catch (error) {
         alert(error.message)
-        setCheckError(true)
-        console.log(checkError)
       }
     };
   
- 
 
- 
+    //login function via firebase
+    const goggleLogin = (e) =>{
+      e.preventDefault()
+      // setCheckError(false)
+      try{
+        SignInWithGoogle(e)
+     
+      }catch(error){
+        console.log(error);
+        // setCheckError(true)
+      }
   
-
-  const goggleLogin = (e) =>{
-    e.preventDefault()
-    try{
-      SignInWithGoogle(e)
-   
-    }catch(error){
-      console.log(error);
-      setCheckError(true)
     }
-
-  }
-
-  console.log( localStorage.getItem("name"));
-  if (localStorage.getItem("name") !== null){
-    setCheck(true)
-    navigate("/main")
-  }
   
+    //if google account is active following case will start and main page will display
+    console.log( localStorage.getItem("name"));
+    if (localStorage.getItem("name") !== null){
+      setCheck(true)
+      navigate("/main")
+    }
+  
+  //login section
   return (
     <Form className='formdiv'>
       <Form.Group className="mb-3" controlId="formBasicEmail">

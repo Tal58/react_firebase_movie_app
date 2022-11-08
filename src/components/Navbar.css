@@ -1,5 +1,3 @@
-
-
 .ComboNav{
     display: flex;
  font-size: 1.5rem;
@@ -41,6 +39,7 @@
 }
 .divimg img{
     width: 5vw;
+    border-radius: 2rem;
 }
 .Navi:hover{
     color: brown;
@@ -62,6 +61,8 @@
   }
   .divimg{
     margin-bottom: 6%;
+    height: auto;
+    width: auto;
   }
   .divimg img{
     width: 15vw;

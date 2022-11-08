@@ -8,6 +8,7 @@ import "./MovieDetail.css";
 function MovieDetail() {
   const navigate = useNavigate();
   const { state: movieDetail } = useLocation();
+  //dipslay a toastify message related to research items and user name if exists
   const notify = () => toast(`♟️${localStorage?.getItem("name")===null ?  "": localStorage?.getItem("name")} Here you can find more details about ${movieDetail["original_title"]} ;)`, {
     position: "top-right",
     autoClose: 5000,
