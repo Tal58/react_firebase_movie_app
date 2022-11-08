@@ -59,7 +59,7 @@ Build a Movie App using ReactJS via Firebase app.
 
 - ReactJS
 
-- Firabase authentication
+- Firebase authentication
 
 - Bootstrap
 
