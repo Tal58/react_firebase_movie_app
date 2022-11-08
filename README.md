@@ -80,7 +80,7 @@ Build a Movie App using ReactJS via Firebase app.
 
 ## 🖥️Desktop version
 <br>
-<img src="./components/images/desktop.gif" align="left" alt="desktop_version">
+<img src="./src/components/images/desktop.gif" align="left" alt="desktop_version">
 <br>
 <br>
 <br>
@@ -95,7 +95,7 @@ Build a Movie App using ReactJS via Firebase app.
 
 ## 📱Mobile version
 <br>
-<img src="./components/images/mobile.gif" align="left" alt="desktop_version">
+<img src="./src/components/images/mobile.gif" align="left" alt="desktop_version">
 <br>
 <br>
 <br>
