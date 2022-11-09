@@ -73,7 +73,6 @@ function Main() {
     //keep the related genreType
     let genreId = genreObj?.filter((item) => item["name"] === genreType);
     console.log(genreId[0]);
-    console.log(typeof searchInfo);
     console.log(genreId[0]?.id);
 // design data from user request
     const finalUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&vote_average.gte=${avrg}&with_genres=${genreId[0]?.id}`;
@@ -112,7 +111,6 @@ function Main() {
   };
   console.log(genre);
   console.log(movies);
-  console.log();
 
   useEffect(() => {
     getData();
