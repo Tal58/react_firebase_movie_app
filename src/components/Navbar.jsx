@@ -54,7 +54,7 @@ function NavbarMovie() {
           <div className="profile">
             {/*following div is designed for getting all info from user*/}
             <div className="divimg ">
-              <img alt="" src={localStorage?.getItem("profilePic")} />
+              <img alt="" referrerPolicy="no-referrer" src={localStorage?.getItem("profilePic")} />
             </div>
             <div className="divp mx-4">
               <p>{localStorage?.getItem("name")}</p>
